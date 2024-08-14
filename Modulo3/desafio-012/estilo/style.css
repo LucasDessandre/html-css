@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    color: white;
+}
+header > p{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section > pre{
+    white-space: pre-line;
+}
