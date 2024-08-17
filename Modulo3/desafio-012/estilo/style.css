@@ -52,6 +52,12 @@ section > pre{
 section > pre > p{
     font-family: var(--fonte3);
 }
+section#img1{
+    background-image: url(../imagens/20160621_Sunflowers_3385.webp);
+}
+section#img2{
+    background-image: url(../imagens/istockphoto-89892258-612x612.jpg);
+}
 section.normal{
     background-color: white;
     color: black;
@@ -59,11 +65,17 @@ section.normal{
 section.imagem{
     background-color: darkgrey;
     color: white;
+    box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    background-position: right center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 section.imagem > pre > p{
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.452);
+    text-shadow: 1px 1px 1px black;
 }
 footer{
     background-color: black;
