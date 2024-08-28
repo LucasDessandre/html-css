@@ -17,6 +17,11 @@
         thead,tfoot{
            background-color: lightgray;
         }
+        tbody > tr:nth-child(even){ /*valor even = linhas da tabela que são pares
+                                      valor odd = linhas da tabela que são ímpares
+                                      valor n = define a quantidade de linhas que são puladas, exemplo de 2n, a cada duas linhas, uma terá a configuração aplicada*/
+            background-color: lightgray;
+        }
         th,td{
             padding: 5px;
             border: 1px solid black;
