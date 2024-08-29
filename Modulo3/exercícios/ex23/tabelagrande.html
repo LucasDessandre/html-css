@@ -8,6 +8,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*posição relativa para o cabeçalho ficar grudado na parte de cima*/
         }
         caption{
             background-color: darkgrey;
@@ -17,13 +18,19 @@
         thead,tfoot{
            background-color: lightgray;
         }
+        thead > tr > th{  /*essa configuração fará o cabeçalho grudar no topo da tabela ao rolar para baixo (a table deve estar na "position: relative"
+                            para funcionar*/
+            position: sticky; /*"sticky" significa grudar*/
+            top: -1px;        /*"top" define que o cabeçalho grudará no topo, e o valor "px"define o quão grudado no topo estará*/
+            background-color: lightgray;
+        }
         tbody > tr:nth-child(even){ /*valor even = linhas da tabela que são pares
                                       valor odd = linhas da tabela que são ímpares
                                       valor n = define a quantidade de linhas que são puladas, exemplo de 2n, a cada duas linhas, uma terá a configuração aplicada*/
             background-color: lightgray;
         }
         th,td{
-            padding: 5px;
+            padding: 10px;
             border: 1px solid black;
             text-align: center;
            }
