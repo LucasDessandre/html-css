@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th, td, caption{
+            border: 1px solid black;
+            text-align: center;
+        }
+        .ColNome{
+            background-color: pink;
+        }
+        .ColSexo{
+            background-color: lightgreen; 
+        }
+        .ColProf{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Pessoas</h1>
+    <table>
+      <colgroup>  
+            <col class="ColNome">
+            <col class="ColSexo" span="2"> <!-- a tag "span" significa que essa classe está se expadindo para o próxima coluna, ou seja, as configurações em css se aplicarão nessa coluna "ColSexo" e na próxima, que seria a "ColIdade"-->
+            <col class="ColProf">
+     </colgroup>
+        <caption>Pessoas</caption>
+        <tr>
+            <th scope="col">Nome</th> 
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>20</td>
+            <td>Professor</td> 
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Desenvolvedora</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Segurança</td>
+        </tr>
+        <tr>
+            <td>Cachorro Louco</td>
+            <td>F</td>
+            <td>52</td>
+            <td>Fisiculturista</td>
+        </tr>
+    </table>
+</body>
+</html>

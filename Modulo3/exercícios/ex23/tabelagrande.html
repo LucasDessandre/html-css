@@ -11,15 +11,14 @@
             position: relative; /*posição relativa para o cabeçalho ficar grudado na parte de cima*/
         }
         caption{
-            background-color: darkgrey;
+            background-color: darkgrey; 
             font-size: 30px;
             color: black;
         }
         thead,tfoot{
            background-color: lightgray;
         }
-        thead > tr > th{  /*essa configuração fará o cabeçalho grudar no topo da tabela ao rolar para baixo (a table deve estar na "position: relative"
-                            para funcionar*/
+        thead > tr > th{  /*essa configuração fará o cabeçalho grudar no topo da tabela ao rolar para baixo (a table deve estar na "position: relative" para funcionar)*/
             position: sticky; /*"sticky" significa grudar*/
             top: -1px;        /*"top" define que o cabeçalho grudará no topo, e o valor "px"define o quão grudado no topo estará*/
             background-color: lightgray;
