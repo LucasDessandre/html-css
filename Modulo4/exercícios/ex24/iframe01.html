@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Iframe</title>
+   <style>
+        iframe{
+            width: 300px;
+            height: 150px;
+            border: 2px solid black;
+        }
+      
+   </style>
 </head>
 <body>
     <h1>Teste de Iframe</h1>
     <p>Acesse o site do <iframe src="https://cursoemvideo.com." frameborder="0"></iframe></p> <!--frameborder = borda do iframe. Iframe = quadro que terá o o site minimizado dentro do nosso próprio site, como se fosse uma aba sobre outra-->
+
+    <h1>Segundo Teste - Testando configurções em CSS e "Inline"</h1>
+    <p>Acesse o site do <iframe src="https://cursoemvideo.com." frameborder="0" width="500" height="300"></iframe></p> <!--Note que, mesmo tendo uma configuração "inline" para a largura, altura e a borda do iframe, a configuração em CSS se sobressai, isso porque ela é prioridade-->
+
+    <h1>Terceiro Teste - Parametro scolling e seus valores</h1>
+    <p>Valor "auto" <br>
+        <iframe src="https://cursoemvideo.com." frameborder="0" scolling="auto"></iframe> <!--Cria a barra de rolagem se o contêudo for maior que o contâiner-->
+    </p>
+    <p>Valor "Yes" <br>
+        <iframe src="https://cursoemvideo.com." frameborder="0" scolling="yes"></iframe> <!--Cria a barra de rolagem independente se o contêudo caber ou não no contâiner--->
+    </p>
+    <p>Valor "No" <br>
+        <iframe src="https://cursoemvideo.com." frameborder="0" scolling="no"></iframe> <!--Deveria impedir a barra de rolagem de aparecer, porém alguns navegadores são incopatíveis com esse valor e isso não acontece-->
+    </p>
 </body>
 </html>
